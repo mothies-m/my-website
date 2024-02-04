@@ -5,16 +5,21 @@ export default {
 </script>
 
 <template>
-    <div>
-        <p>Welcome to my interative Terminal<a class="text-red-600">  :)</a></p>
-        <p>Make yourself home, type <a class="text-red-600">help</a> to learn more..</p>
-        <label class="float-left text-nowrap">~</label>
+    <div class="flex flex-col w-full"> 
+        <div id="main">
+             <p>Welcome to my interative Terminal<a class="text-red-600">  :)</a></p>
+            <p>Make yourself home, type <a class="text-red-600">help</a> to learn more..</p>
+            <p class="terminal">{{value}}</p>
+        </div>
+        <div class="flex flex-row">
+        <label class="w-44">User@portfolio:$ ~</label>
         <input
         type="text"
         v-model="cmd"
         @keydown.enter="handleKeyDown"
         />
-        <div class="terminal">{{value}}</div>
+        </div>
+
     </div>
 </template>
 
@@ -34,13 +39,22 @@ const handleKeyDown = (e) => {
         case "pwd":
             newOutput += "Your termianl is cool";
             break;
+        case "clear":
+            clearTerminal(); 
+            break;
         default:
-            newOutput += "Unknown Command!!";
+            newOutput += "Unknown Command";
     }
      value.value = newOutput;
      cmd.value = '';
   }
 };
+const clearTerminal = () => {
+    const terminalElement = document.getElementById('main');
+    if (terminalElement) {
+      terminalElement.innerHTML = '';
+    }
+  };
 </script>
 
 <style>
