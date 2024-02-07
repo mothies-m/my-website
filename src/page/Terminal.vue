@@ -25,7 +25,7 @@ export default {
 
 <script setup>
 import { ref } from 'vue';
-import { help } from '../components/commands/command.js'
+import { help, about, socials, skills, resume, web, projects } from '../components/commands/command.js'
 
 let cmd = ref('');
 let value = ref('');
@@ -37,10 +37,10 @@ const handleKeyDown = (e) =>  {
     let newOutput =`${value.value}`+'\n'+'User@portfolio:$ ~'+`${cmd.value}`+'\n';
     switch(cmd.value){
         case "ls":
-            newOutput += "lswfwag";
+            newOutput += "This is not an real terminal🫸";
             break;
         case "pwd":
-            newOutput += "Your termianl is cool";
+            newOutput += "There is real no directory🫸";
             break;
         case "clear":
             clearTerminal();
@@ -51,6 +51,27 @@ const handleKeyDown = (e) =>  {
         case "help":
             newOutput += help;
             break;
+        case "cd":
+            newOutput += "There is real no directory🫸";
+            break;
+        case "about":
+            newOutput += about;
+            break;
+        case "socials":
+            newOutput += socials;
+            break;
+        case "skills":
+            newOutput += skills;
+            break;
+        case "projects":
+            newOutput += projects;
+            break;
+        case "resume":
+            newOutput += resume;
+            break;
+        case "web":
+            newOutput += web;
+            break; 
         default:
             newOutput += "Unknown Command";
     }
