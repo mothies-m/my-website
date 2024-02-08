@@ -5,27 +5,26 @@ export default {
 </script>
 
 <template>
-    <div class="flex flex-col w-full"> 
+    <div class="flex flex-col w-full typing"> 
         <div id="main">
-             <p>Welcome to my interative Terminal<a class="text-red-600">  :)</a></p>
-            <p>Make yourself home, type <a class="text-red-600">help</a> to learn more..</p>
-            <p class="terminal" v-html="value"></p>
+             <p class="whitespace-pre-line" v-html="value"></p>
         </div>
-             <p v-show="showInput" class="terminal" v-html="value"></p>
+             <p v-show="showInput" class="whitespace-pre-line" v-html="value"></p>
         <div class="flex flex-row">
-        <label class="w-40">User@portfolio:$ ~</label>
+        <label class="w-40 text-red-200">User@portfolio:$ ~</label>
         <input 
         type="text"
         v-model="cmd"
+        class="text-pink-200"
         @keydown.enter="handleKeyDown"
-        />
+        /> 
         </div>
     </div>
 </template>
 
 <script setup>
 import { ref } from 'vue';
-import { help, about, socials, skills, resume, web, projects } from '../components/commands/command.js'
+import { help, about, socials, skills, resume, web, projects, github, instagram, linkedin, gmail } from '../components/commands/command.js'
 
 let cmd = ref('');
 let value = ref('');
@@ -34,13 +33,13 @@ let showInput = ref(false);
 
 const handleKeyDown = (e) =>  {
   if (e.key === 'Enter') {
-    let newOutput =`${value.value}`+'\n'+'User@portfolio:$ ~'+`${cmd.value}`+'\n';
+    let newOutput =`${value.value}`+'\n'+'<a class="text-red-200">User@portfolio:$ ~</a>'+`${cmd.value}`+'\n';
     switch(cmd.value){
         case "ls":
-            newOutput += "This is not an real terminal🫸";
+            newOutput += `<p class="text-blue-200">This is not an real terminal</p>`;
             break;
         case "pwd":
-            newOutput += "There is real no directory🫸";
+            newOutput += `<p class="text-blue-200">There is real no directory</p>`;
             break;
         case "clear":
             clearTerminal();
@@ -52,7 +51,7 @@ const handleKeyDown = (e) =>  {
             newOutput += help;
             break;
         case "cd":
-            newOutput += "There is real no directory🫸";
+            newOutput += `<p class="text-blue-200">There is real no directory</p>`;
             break;
         case "about":
             newOutput += about;
@@ -66,14 +65,32 @@ const handleKeyDown = (e) =>  {
         case "projects":
             newOutput += projects;
             break;
-        case "resume":
-            newOutput += resume;
-            break;
         case "web":
             newOutput += web;
+            break;
+        case "github":
+            newOutput += `<p class="text-blue-200">Opening github...</p>`
+            newTab(github)
             break; 
+        case "linkedin":
+            newOutput += `<p class="text-blue-200">Opening linkedin...</p>`
+            newTab(linkedin)
+            break;
+        case "gmail":
+            newOutput += `<p class="text-blue-200">Opening mailto:mothieswaran711@gmail.com</p>`
+            newTab(gmail)
+            break;
+        case "instagram":
+            newOutput += `<p class="text-blue-200">Opening instagram...</p>`
+            newTab(instagram)
+            break;
+        case "resume":
+            newOutput += `<p class="text-blue-200">Opening resume...</p>`
+            newTab(resume)
+            break;
         default:
-            newOutput += "Unknown Command";
+            newOutput += `<p class="text-blue-200">There is no such command exist...type <a class="text-pink-200 text-shadow shadow-pink-800">'help'</a></p>`;
+            break;
     }
      value.value = newOutput;
      cmd.value = '';
@@ -87,31 +104,47 @@ const clearTerminal = () => {
     }
 };
 
+function newTab(link) {
+  setTimeout(function() {
+    window.open(link, "_blank");
+  }, 500);
+}
 </script>
 
 <style>
 body {
-  background-color: #333;
-  color: white;
+  background-color: #211D1B;
+  color: #fdcaff;
   height: 100vh;
   padding: 1rem;
   box-sizing: border-box;
   overflow: auto;
 }
-
+#liner{
+    line-height: 1.3em;
+    margin-top: -2px;
+    animation: show 0.5s ease forwards;
+    animation-delay: 1.2s;
+    opacity: 0;
+}
+::selection {
+  color: #211D1B;
+  background-color: #fedeff;
+}
+::-moz-selection {
+  color: #211D1B;
+  background-color: #fedeff;
+}
 input {
   border: none;
   outline: none;
+  background-color: #211D1B;
+  color: whitesmoke;
   margin: 0;
   padding: 0;
   background-color: transparent;
   color: white;
   width: 100%;
-}
-
-.terminal {
-    color: white;
-    white-space: pre-line; 
 }
 </style>
 

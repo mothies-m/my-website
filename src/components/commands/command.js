@@ -1,5 +1,11 @@
+export const linkedin = "https://www.linkedin.com/in/mothies-m/";
+export const instagram = "https://www.instagram.com/drig0__/";
+export const github = "https://github.com/mothies-m";
+export const gmail = 'mailto:mothieswaran711.com';
+export const resume = 'https://drive.google.com/file/d/1RXbVO63IPNl0HmDZvG68uHAnaF3jqA8B/view?usp=sharing';
+
 export const help =`   
-    <p>
+    <p class="text-blue-200">
     <a class="text-red-400">help</a> - For list of commands.<br>
     about - To know more about me.<br>
     socials - To know more about my social networks.<br>
@@ -11,7 +17,7 @@ export const help =`
 `;
 
 export const about = `
-    <p>
+    <p class="text-blue-200">
     Hey, I'm Mothieswaran!🙌,
     I'm a passionate software developer and computer science student in my third year at 
     SRM University Tiruchirappalli. 
@@ -24,7 +30,7 @@ export const about = `
 `
 
 export const socials = `
-    <p>
+    <p class="text-blue-200">
     github - <a href="https://github.com/mothies-m">github/mothies-m</a>
     linkedin - <a href="https://www.linkedin.com/in/mothies-m/">linkedin/mothies-m</a>
     instagram - <a href="https://www.instagram.com/drig0__/">instagram/mothies-m</a>
@@ -32,35 +38,21 @@ export const socials = `
     </p>
 `
 export const projects = `
-    <p>Yet to add😂...</p>
+    <p class="text-blue-200">Yet to add😂...</p>
 `
 
 export const skills = `
-         <p>
+            <p class="text-blue-200">
                 Programming Languages :
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>C++</li>
+                    <div>JavaScript</div><div>Python</div><div>C++</div>
                 Frameworks:
-                    <li>Tailwindcss</li>
-                    <li>React</li>
-                    <li>VueJS</li>
-                    <li>NextJS</li>
-                    <li>NodeJs</li>
-                    <li>ExpressJs</li>
-                    <li>MySQL</li>
-                Tools:
-                    <li>Git</li>
-                    <li>Figma</li>
-                    <li>Vercel</li>
+                    <div>Tailwindcss</div><div>React</div><div>VueJS</div><div>NextJS</div><div>NodeJs</div><div>ExpressJs</div><div>MySQL</div>
+                Tools:<div>Git</div><div>Figma</div><div>Vercel</div>
             </p>
-`
+    `
 export const web =`
-            <p>
+            <p class="text-blue-200">
                 🛠️🌐 Crafted with Vue.js in Neovim, this site seamlessly merges terminal-inspired design 
                 with polished styling using Tailwind CSS.            
             </p>
-`
-export const resume = `
-              <a href="file:///C:/Users/drig0/Desktop/my-term-website/src/components/resume/Resume_mothieswaran.pdf" target="blank">link</a>
 `
