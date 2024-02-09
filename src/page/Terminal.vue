@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <div class="flex flex-col w-full typing"> 
+    <div class="flex flex-col w-full"> 
         <div id="main">
              <p class="whitespace-pre-line" v-html="value"></p>
         </div>
@@ -120,12 +120,26 @@ body {
   box-sizing: border-box;
   overflow: auto;
 }
-#liner{
-    line-height: 1.3em;
-    margin-top: -2px;
-    animation: show 0.5s ease forwards;
-    animation-delay: 1.2s;
-    opacity: 0;
+p {
+  display: block;
+  line-height: 1.3em;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+  letter-spacing: 0.05em;
+  animation: typing 0.5s steps(30, end);
+}
+.no-animation{
+    animation: typing 0 steps(30, end);
+}
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
 }
 ::selection {
   color: #211D1B;

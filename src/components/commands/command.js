@@ -5,36 +5,36 @@ export const gmail = 'mailto:mothieswaran711.com';
 export const resume = 'https://drive.google.com/file/d/1RXbVO63IPNl0HmDZvG68uHAnaF3jqA8B/view?usp=sharing';
 
 export const help =`   
-    <p class="text-blue-200">
-    <a class="text-red-400">help</a> - For list of commands.<br>
-    about - To know more about me.<br>
-    socials - To know more about my social networks.<br>
-    projects - To know more about my projects.<br>
-    skills - To know more about my skills.<br>
-    web - To learn more about this website.<br>
-    resume - To get my resume link.
+    <p class="text-blue-200 flex flex-col">
+    <a class="text-pink-200 text-shadow shadow-pink-800">help</a>      <a class="ml-9">For list of commands.</a><br>
+    <a class="text-pink-200 text-shadow shadow-pink-800">about</a>     <a class="ml-9">To know more about me.</a><br>
+    <a class="text-pink-200 text-shadow shadow-pink-800">socials</a>         <a class="ml-9">To know more about my social networks.</a><br>
+    <a class="text-pink-200 text-shadow shadow-pink-800">projects</a>        <a class="ml-9">To know more about my projects.</a><br>
+    <a class="text-pink-200 text-shadow shadow-pink-800">skills</a>         <a class="ml-9">To know more about my skills.</a><br>
+    <a class="text-pink-200 text-shadow shadow-pink-800">web</a>             <a class="ml-9">learn more about this website.</a><br>
+   <a class="text-pink-200 text-shadow shadow-pink-800">resume</a>          <a class="ml-9">To get my resume link.</a>
     </p>
 `;
 
 export const about = `
     <p class="text-blue-200">
-    Hey, I'm Mothieswaran!🙌,
-    I'm a passionate software developer and computer science student in my third year at 
-    SRM University Tiruchirappalli. 
-    Web development has been my cherished hobby, and I thrive on creating interactive websites. 
-    Eager to expand my expertise, I constantly delve into new tools and frameworks, 
-    always seeking to broaden my knowledge in the dynamic field of computer science. 
-    My enthusiasm for learning extends to exploring diverse programming languages and emerging technologies, 
-    driving me to stay at the forefront of innovation.            
+    Hey, I'm Mothieswaran!🙌,<br>
+    I'm a passionate software developer and computer science student in my third year at<br> 
+    SRM University Tiruchirappalli.<br>
+    Web development has been my cherished hobby, and I thrive on creating interactive websites.<br>
+    Eager to expand my expertise, I constantly delve into new tools and frameworks, <br>
+    always seeking to broaden my knowledge in the dynamic field of computer science. <br>
+    My enthusiasm for learning extends to exploring diverse programming languages and emerging technologies, <br>
+    driving me to stay at the forefront of innovation. <br>           
     </p>
 `
 
 export const socials = `
     <p class="text-blue-200">
-    github - <a href="https://github.com/mothies-m">github/mothies-m</a>
-    linkedin - <a href="https://www.linkedin.com/in/mothies-m/">linkedin/mothies-m</a>
-    instagram - <a href="https://www.instagram.com/drig0__/">instagram/mothies-m</a>
-    gmail - <a href="">mothieswaran711@gmail.com</a>
+    <a class="text-pink-200 text-shadow shadow-pink-800">github</a>  <a class="ml-9 hover:text-pink-200" href="https://github.com/mothies-m">github/mothies-m</a><br>
+    <a class="text-pink-200 text-shadow shadow-pink-800">linkedin</a>  <a class="ml-9 hover:text-pink-200" href="https://www.linkedin.com/in/mothies-m/">linkedin/mothies-m</a><br>
+    <a class="text-pink-200 text-shadow shadow-pink-800">instagram</a>  <a class="ml-9 hover:text-pink-200" href="https://www.instagram.com/drig0__/">instagram/mothies-m</a><br>
+    <a class="text-pink-200 text-shadow shadow-pink-800">gmail</a>  <a class="ml-9 hover:text-pink-200">mothieswaran711@gmail.com</a><br>
     </p>
 `
 export const projects = `
@@ -42,12 +42,15 @@ export const projects = `
 `
 
 export const skills = `
-            <p class="text-blue-200">
-                Programming Languages :
-                    <div>JavaScript</div><div>Python</div><div>C++</div>
-                Frameworks:
-                    <div>Tailwindcss</div><div>React</div><div>VueJS</div><div>NextJS</div><div>NodeJs</div><div>ExpressJs</div><div>MySQL</div>
-                Tools:<div>Git</div><div>Figma</div><div>Vercel</div>
+            <p class="text-blue-200 flex">
+                <a class="text-pink-200 text-shadow shadow-pink-800">Programming Languages :</a><br>
+                    JavaScript<br>
+                    Python<br>
+                    C++<br>
+                <a class="text-pink-200 text-shadow shadow-pink-800">Frameworks:</a><br>
+                    Tailwindcss<br>React<br>VueJS<br>NextJS<br>NodeJs<br>ExpressJs<br>MySQL<br>
+                <a class="text-pink-200 text-shadow shadow-pink-800">Tools:</a><br>
+                    Git<br>Figma<br>Vercel
             </p>
     `
 export const web =`
