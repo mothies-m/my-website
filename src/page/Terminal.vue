@@ -94,6 +94,9 @@ const handleKeyDown = (e) =>  {
         case "banner":
             newOutput += banner;
             break;
+        case "":
+            newOutput += "";
+            break;
         default:
             newOutput += `<p class="text-blue-200 mt-6">There is no such command exist...type <a class="text-pink-200 text-shadow shadow-pink-800">'help'</a></p>`;
             break;
