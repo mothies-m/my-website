@@ -91,6 +91,9 @@ const handleKeyDown = (e) =>  {
             newOutput += `<p class="text-blue-200 mt-6">Opening resume...</p>`
             newTab(resume)
             break;
+        case "banner":
+            newOutput += banner;
+            break;
         default:
             newOutput += `<p class="text-blue-200 mt-6">There is no such command exist...type <a class="text-pink-200 text-shadow shadow-pink-800">'help'</a></p>`;
             break;

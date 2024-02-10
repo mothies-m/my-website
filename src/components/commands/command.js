@@ -11,8 +11,9 @@ export const help =`
     <a class="text-pink-200 text-shadow shadow-pink-800">socials</a>         <a class="ml-9">To know more about my social networks.</a><br>
     <a class="text-pink-200 text-shadow shadow-pink-800">projects</a>        <a class="ml-9">To know more about my projects.</a><br>
     <a class="text-pink-200 text-shadow shadow-pink-800">skills</a>         <a class="ml-9">To know more about my skills.</a><br>
-    <a class="text-pink-200 text-shadow shadow-pink-800">web</a>             <a class="ml-9">learn more about this website.</a><br>
-   <a class="text-pink-200 text-shadow shadow-pink-800">resume</a>          <a class="ml-9">To get my resume link.</a>
+    <a class="text-pink-200 text-shadow shadow-pink-800">web</a>             <a class="ml-9">Learn more about this website.</a><br>
+   <a class="text-pink-200 text-shadow shadow-pink-800">resume</a>          <a class="ml-9">To get my resume link.</a><br>
+    <a class="text-pink-200 text-shadow shadow-pink-800">banner</a>         <a class="ml-9">To get my banner.</a>
     </p>
 `;
 
