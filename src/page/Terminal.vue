@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <div class="flex flex-col w-full md:max-w-2xl"> 
+    <div class="flex flex-col text-wrap"> 
         <div>
             <p class="text-white" v-if="firstInput" v-html="banner"></p>
             <p class="whitespace-pre-line" v-html="value"></p>
@@ -124,7 +124,6 @@ body {
   min-height: 99%;
   height: 100%;
   width: 100%;
-  min-width: 550px;
   box-sizing: border-box;
   overflow: auto;
   overflow-x: hidden;
