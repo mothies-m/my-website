@@ -5,11 +5,12 @@ export default {
 </script>
 
 <template>
-    <div class="flex flex-col w-full"> 
-        <div id="main">
-             <p class="whitespace-pre-line" v-html="value"></p>
+    <div class="flex flex-col w-full md:max-w-2xl"> 
+        <div>
+            <p class="text-white" v-if="firstInput" v-html="banner"></p>
+            <p class="whitespace-pre-line" v-html="value"></p>
         </div>
-             <p v-show="showInput" class="whitespace-pre-line" v-html="value"></p>
+             <p v-show="showInput" class="whitespace-pre-line"></p>
         <div class="flex flex-row">
         <label class="w-40 text-red-200">User@portfolio:$ ~</label>
         <input 
@@ -24,34 +25,36 @@ export default {
 
 <script setup>
 import { ref } from 'vue';
-import { help, about, socials, skills, resume, web, projects, github, instagram, linkedin, gmail } from '../components/commands/command.js'
+import { help, about, socials, skills, resume, web, projects, github, instagram, linkedin, banner ,gmail } from '../components/commands/command.js'
 
 let cmd = ref('');
 let value = ref('');
 
+let firstInput = ref(true)
 let showInput = ref(false);
 
 const handleKeyDown = (e) =>  {
   if (e.key === 'Enter') {
-    let newOutput =`${value.value}`+'\n'+'<a class="text-red-200">User@portfolio:$ ~</a>'+`${cmd.value}`+'\n';
+    let newOutput =`${value.value}`+'\n'+'<a class="text-red-200 mt-6">User@portfolio:$ ~</a>'+`${cmd.value}`+'\n';
     switch(cmd.value){
         case "ls":
-            newOutput += `<p class="text-blue-200">This is not an real terminal</p>`;
+            newOutput += `<p class="text-blue-200 mt-6">This is not an real terminal.</p>`;
             break;
         case "pwd":
-            newOutput += `<p class="text-blue-200">There is real no directory</p>`;
+            newOutput += `<p class="text-blue-200 mt-6">There is real no directory.</p>`;
             break;
         case "clear":
             clearTerminal();
             newOutput = '';
             value.value = '';
             showInput = ref(true)
+            firstInput = ref(false)
             break;
         case "help":
             newOutput += help;
             break;
         case "cd":
-            newOutput += `<p class="text-blue-200">There is real no directory</p>`;
+            newOutput += `<p class="text-blue-200 mt-6">There is real no directory.</p>`;
             break;
         case "about":
             newOutput += about;
@@ -69,27 +72,27 @@ const handleKeyDown = (e) =>  {
             newOutput += web;
             break;
         case "github":
-            newOutput += `<p class="text-blue-200">Opening github...</p>`
+            newOutput += `<p class="text-blue-200 mt-6">Opening github...</p>`
             newTab(github)
             break; 
         case "linkedin":
-            newOutput += `<p class="text-blue-200">Opening linkedin...</p>`
+            newOutput += `<p class="text-blue-200 mt-6">Opening linkedin...</p>`
             newTab(linkedin)
             break;
         case "gmail":
-            newOutput += `<p class="text-blue-200">Opening mailto:mothieswaran711@gmail.com</p>`
+            newOutput += `<p class="text-blue-200 mt-6">Opening mailto:mothieswaran711@gmail.com</p>`
             newTab(gmail)
             break;
         case "instagram":
-            newOutput += `<p class="text-blue-200">Opening instagram...</p>`
+            newOutput += `<p class="text-blue-200 mt-6">Opening instagram...</p>`
             newTab(instagram)
             break;
         case "resume":
-            newOutput += `<p class="text-blue-200">Opening resume...</p>`
+            newOutput += `<p class="text-blue-200 mt-6">Opening resume...</p>`
             newTab(resume)
             break;
         default:
-            newOutput += `<p class="text-blue-200">There is no such command exist...type <a class="text-pink-200 text-shadow shadow-pink-800">'help'</a></p>`;
+            newOutput += `<p class="text-blue-200 mt-6">There is no such command exist...type <a class="text-pink-200 text-shadow shadow-pink-800">'help'</a></p>`;
             break;
     }
      value.value = newOutput;
@@ -113,14 +116,20 @@ function newTab(link) {
 
 <style>
 body {
+  font-family: monospace;
   background-color: #211D1B;
   color: #fdcaff;
-  height: 100vh;
-  padding: 1rem;
+  margin: 0;
+  padding: 15px 20px;
+  min-height: 99%;
+  height: 100%;
+  width: 100%;
+  min-width: 550px;
   box-sizing: border-box;
   overflow: auto;
+  overflow-x: hidden;
 }
-p {
+ p {
   display: block;
   line-height: 1.3em;
   margin: 0;
@@ -128,10 +137,10 @@ p {
   white-space: nowrap;
   margin: 0;
   letter-spacing: 0.05em;
-  animation: typing 0.5s steps(30, end);
+  animation: typing 1s steps(80, end);
 }
 .no-animation{
-    animation: typing 0 steps(30, end);
+    animation: typing 0 steps(80, end);
 }
 @keyframes typing {
     from{
@@ -159,6 +168,7 @@ input {
   background-color: transparent;
   color: white;
   width: 100%;
+  animation: typing 1s steps(80, end);
 }
 </style>
 

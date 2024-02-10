@@ -19,9 +19,9 @@ export const help =`
 export const about = `
     <p class="text-blue-200">
     Hey, I'm Mothieswaran!🙌,<br>
-    I'm a passionate software developer and computer science student in my third year at<br> 
-    SRM University Tiruchirappalli.<br>
-    Web development has been my cherished hobby, and I thrive on creating interactive websites.<br>
+    I'm a passionate <a class="text-pink-200">software developer</a> and computer science student in my <a class="text-pink-200">IIIrd year</a> at<br> 
+    <a class="text-pink-200">SRM University Tiruchirappalli</a>.<br>
+    <a class="text-pink-200">Web development</a> has been my cherished hobby, and I thrive on creating interactive websites.<br>
     Eager to expand my expertise, I constantly delve into new tools and frameworks, <br>
     always seeking to broaden my knowledge in the dynamic field of computer science. <br>
     My enthusiasm for learning extends to exploring diverse programming languages and emerging technologies, <br>
@@ -31,10 +31,10 @@ export const about = `
 
 export const socials = `
     <p class="text-blue-200">
-    <a class="text-pink-200 text-shadow shadow-pink-800">github</a>  <a class="ml-9 hover:text-pink-200" href="https://github.com/mothies-m">github/mothies-m</a><br>
-    <a class="text-pink-200 text-shadow shadow-pink-800">linkedin</a>  <a class="ml-9 hover:text-pink-200" href="https://www.linkedin.com/in/mothies-m/">linkedin/mothies-m</a><br>
-    <a class="text-pink-200 text-shadow shadow-pink-800">instagram</a>  <a class="ml-9 hover:text-pink-200" href="https://www.instagram.com/drig0__/">instagram/mothies-m</a><br>
-    <a class="text-pink-200 text-shadow shadow-pink-800">gmail</a>  <a class="ml-9 hover:text-pink-200">mothieswaran711@gmail.com</a><br>
+    <a class="text-pink-200 text-shadow shadow-pink-800">github</a>  <a class="ml-16 hover:text-pink-200" href="https://github.com/mothies-m">github/mothies-m</a><br>
+    <a class="text-pink-200 text-shadow shadow-pink-800">linkedin</a>  <a class="ml-12 hover:text-pink-200" href="https://www.linkedin.com/in/mothies-m/">linkedin/mothies-m</a><br>
+    <a class="text-pink-200 text-shadow shadow-pink-800">instagram</a>  <a class="ml-10 hover:text-pink-200" href="https://www.instagram.com/drig0__/">instagram/mothies-m</a><br>
+    <a class="text-pink-200 text-shadow shadow-pink-800">gmail</a>  <a class="ml-[70px] hover:text-pink-200">mothieswaran711@gmail.com</a><br>
     </p>
 `
 export const projects = `
@@ -42,20 +42,35 @@ export const projects = `
 `
 
 export const skills = `
-            <p class="text-blue-200 flex">
-                <a class="text-pink-200 text-shadow shadow-pink-800">Programming Languages :</a><br>
-                    JavaScript<br>
-                    Python<br>
-                    C++<br>
-                <a class="text-pink-200 text-shadow shadow-pink-800">Frameworks:</a><br>
-                    Tailwindcss<br>React<br>VueJS<br>NextJS<br>NodeJs<br>ExpressJs<br>MySQL<br>
-                <a class="text-pink-200 text-shadow shadow-pink-800">Tools:</a><br>
-                    Git<br>Figma<br>Vercel
-            </p>
+    <p class="text-blue-200 flex flex-col">
+    <a class="text-pink-200 text-shadow shadow-pink-800">Programming Languages :</a><br>
+    <a class="hover:text-pink-200">JavaScript</a>
+    <a class="hover:text-pink-200">Python</a>
+    <a class="hover:text-pink-200">C++</a>
+    <br>
+    <a class="text-pink-200 text-shadow shadow-pink-800">Frameworks:</a><br>
+    Tailwindcss
+    <a class="hover:text-pink-200">React</a>
+    <a class="hover:text-pink-200">VueJS</a>
+    <a class="hover:text-pink-200">NextJS</a>
+    <a class="hover:text-pink-200">NodeJs</a>
+    <a class="hover:text-pink-200">ExpressJs</a>
+    <a class="hover:text-pink-200">MySQL</a>
+    <br>
+    <a class="text-pink-200 text-shadow shadow-pink-800">Tools:</a><br>
+    <a class="hover:text-pink-200">Git</a>
+    <a class="hover:text-pink-200">Figma</a>
+    <a class="hover:text-pink-200">Vercel</a>
+    </p>
     `
 export const web =`
             <p class="text-blue-200">
-                🛠️🌐 Crafted with Vue.js in Neovim, this site seamlessly merges terminal-inspired design 
-                with polished styling using Tailwind CSS.            
+                🛠️🌐 Crafted with <a class="text-pink-200">Vue.js</a> in <a class="text-pink-200">Neovim</a>, this site seamlessly merges terminal-inspired design<br> with polished styling using <a class="text-pink-200">Tailwind CSS</a>.            
             </p>
+`
+export const banner = `
+        <p>
+        Welcome to my interactive web terminal.<br>
+        For list of availeble command, type <a class="text-pink-200 text-shadow shadow-pink-800">'help'</a>
+        </p>
 `
