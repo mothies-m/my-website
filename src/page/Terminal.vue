@@ -22,16 +22,14 @@ export default {
             @keydown.enter="handleKeyDown"
             /> 
         </div>
-        <div class="flex flex-col-reverse bottom-0 text-right w-full">
-            <label class="text-white">Feeling lost try <a href="" class="text-pink-200">Discriptive view</a></label>
-        </div> 
+            <DescriptView /> 
     </div>
 </template>
 
 <script setup>
 import { ref } from 'vue';
-import { help, about, socials, skills, resume, web, projects, github, instagram, linkedin, banner ,gmail } from '../components/commands/command.js'
-
+import { help, about, socials, skills, resume, web, projects, github, instagram, linkedin, banner ,gmail } from '../components/commands/command.js';
+import DescriptView from './DescriptView.vue' 
 let cmd = ref('');
 let value = ref('');
 
