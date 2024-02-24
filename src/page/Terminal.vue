@@ -10,16 +10,21 @@ export default {
             <p class="text-white" v-if="firstInput" v-html="banner"></p>
             <p class="whitespace-pre-line" v-html="value"></p>
         </div>
-             <p v-show="showInput" class="whitespace-pre-line"></p>
-        <div class="flex flex-row">
-        <label class="w-40 text-red-200">User@portfolio:$ ~</label>
-        <input 
-        type="text"
-        v-model="cmd"
-        class="text-pink-200"
-        @keydown.enter="handleKeyDown"
-        /> 
+        <div>
+            <p v-show="showInput" class="whitespace-pre-line"></p>
         </div>
+        <div class="flex flex-row">
+            <label class="w-40 text-red-200">User@portfolio:$ ~</label>
+            <input 
+            type="text"
+            v-model="cmd"
+            class="text-pink-200"
+            @keydown.enter="handleKeyDown"
+            /> 
+        </div>
+        <div class="flex flex-col-reverse bottom-0 text-right w-full">
+            <label class="text-white">Feeling lost try <a href="" class="text-pink-200">Discriptive view</a></label>
+        </div> 
     </div>
 </template>
 
