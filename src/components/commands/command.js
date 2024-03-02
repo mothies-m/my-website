@@ -1,5 +1,5 @@
 export const linkedin = "https://www.linkedin.com/in/mothies-m/";
-export const instagram = "https://www.instagram.com/drig0__/";
+export const instagram = "https://www.instagram.com/mothies__/";
 export const github = "https://github.com/mothies-m";
 export const gmail = 'mailto:mothieswaran711.com';
 export const resume = 'https://drive.google.com/file/d/1RXbVO63IPNl0HmDZvG68uHAnaF3jqA8B/view?usp=sharing';
@@ -31,7 +31,7 @@ export const about = `<div class="text-blue-200">
 export const socials = `<div class="text-blue-200"><p>
     <a class="text-pink-200 text-shadow shadow-pink-800">github</a>  <a class="ml-16 hover:text-pink-200" href="https://github.com/mothies-m">github/mothies-m</a><br>
     <a class="text-pink-200 text-shadow shadow-pink-800">linkedin</a>  <a class="ml-12 hover:text-pink-200" href="https://www.linkedin.com/in/mothies-m/">linkedin/mothies-m</a><br>
-    <a class="text-pink-200 text-shadow shadow-pink-800">instagram</a>  <a class="ml-10 hover:text-pink-200" href="https://www.instagram.com/drig0__/">instagram/mothies-m</a><br>
+    <a class="text-pink-200 text-shadow shadow-pink-800">instagram</a>  <a class="ml-10 hover:text-pink-200" href="https://www.instagram.com/mothies__/">instagram/mothies-m</a><br>
     <a class="text-pink-200 text-shadow shadow-pink-800">gmail</a>  <a class="ml-[70px] hover:text-pink-200">mothieswaran711@gmail.com</a><br>
     </p></div>
 `
