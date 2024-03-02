@@ -4,7 +4,7 @@
             <label class="text-white">Feeling lost try <button @click="showDescription = true" class="text-pink-200 animate-pulse text-shadow shadow-pink-900">Discriptive view</button></label>
         </div>
         <transition appear>
-        <div class="absolute cursor-pointer top-4 left-6 right-20 bottom-4 rounded-l border-white bg-sky-900" v-if="showDescription">
+        <div class="fixed cursor-pointer top-4 left-6 right-20 bottom-4 rounded-l border-white bg-sky-900" v-if="showDescription">
             <div class="absolute cursor-pointer top-[10px] left-[10px] right-[10px] bottom-[10px] border-white border bg-sky-900 overflow-y-auto">
                 <div class="flex flex-row justify-between">
                     <p class="pl-2 pt-2 text-white underline underline-offset-2">About</p>
