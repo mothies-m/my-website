@@ -1,7 +1,8 @@
 <template>
     <div>
         <div class="flex flex-row-reverse bottom-0">
-            <label class="text-white">Feeling lost try <button @click="showDescription = true" class="text-pink-200 animate-pulse text-shadow shadow-pink-900">Discriptive view</button></label>
+            <label class="text-white hidden md:block">Feeling lost try <button @click="showDescription = true" class="text-pink-200 animate-pulse text-shadow shadow-pink-900">Discriptive view</button></label>
+            <button @click="showDescription = true" class="block md:hidden animate-pulse">easy-view</button>
         </div>
         <transition appear>
         <div class="fixed cursor-pointer top-4 left-6 right-20 bottom-4 rounded-l border-white bg-sky-900" v-if="showDescription">
