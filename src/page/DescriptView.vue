@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="flex flex-col-reverse bottom-0 text-right w-full">
+        <div class="flex flex-row-reverse bottom-0">
             <label class="text-white">Feeling lost try <button @click="showDescription = true" class="text-pink-200 animate-pulse text-shadow shadow-pink-900">Discriptive view</button></label>
         </div>
         <transition appear>
