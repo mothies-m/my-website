@@ -65,10 +65,12 @@ export const web =`<div class="text-blue-200">
                 🛠️🌐 Crafted with <a class="text-pink-200">Vue.js</a> in <a class="text-pink-200">Neovim</a>, this site seamlessly merges terminal-inspired design<br> with polished styling using <a class="text-pink-200">Tailwind CSS</a>.            
             </div>
 `
-export const banner = `<div>
+export const banner = `
+    <div>
     <h1 class="text-4xl text-blue-200">MOTHIESWRAN M</h1>
     <h2 class="text-xl text-pink-200">Computer Student-Software developer</h2>
-    <p>I craft captivating websites that blend creativity with functionality, delivering unique online experiences<br> that leave a lasting impression.</p>
-    <p class="text-blue-200 mt-4">Welcome to my interactive web terminal.<br>For list of availeble command, type <a class="text-pink-200 text-shadow shadow-pink-800">'help'</a>
-    </p></div>
+    <p>I craft captivating websites that blend creativity <br>with functionality, delivering unique online <br> experiences that leave a lasting impression.</p>
+    <p class="text-blue-200 mt-4">Welcome to my interactive web terminal. <br> For list of availeble command, type <a class="text-pink-200 text-shadow shadow-pink-800">'help'</a>
+    </p>
+    </div>
 `
