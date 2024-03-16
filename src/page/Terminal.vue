@@ -39,7 +39,7 @@ let showInput = ref(false);
 const handleKeyDown = (e) =>  {
   if (e.key === 'Enter') {
     let newOutput =`${value.value}`+'\n'+'<a class="text-red-200 mt-6">User@portfolio:$ ~</a>'+`${cmd.value}`+'\n';
-    switch(cmd.value.toLocaleLowerCase()){
+    switch(cmd.value.toLocaleLowerCase().trim()){
         case "ls":
             newOutput += `<p class="text-blue-200 mt-6">This is not an real terminal.</p>`;
             break;
