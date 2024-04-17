@@ -10,6 +10,7 @@ This project is an interactive website built using Vue.js and Tailwind CSS. It t
 - **Vue.js Components**: The project utilizes Vue.js components to manage the website's structure and functionality efficiently.
 - **Tailwind CSS Styling**: Tailwind CSS is used for styling the website, allowing for rapid development and easy customization.
 - **Responsive Design**: The website is designed to be fully responsive, ensuring a consistent experience across different devices and screen sizes.
+- **View the Website**: Open your web browser and navigate to `https://my-term-website.vercel.app/` to view the website locally.
 
 ## Recommended IDE Setup
 
@@ -38,6 +39,10 @@ npm run build
 ```
 
 ### Lint with [ESLint](https://eslint.org/)
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
 
 ```sh
 npm run lint
