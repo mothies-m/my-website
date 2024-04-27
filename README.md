@@ -2,6 +2,7 @@
 
 This template should help get you started developing with Vue 3 in Vite.
 
+
 This project is an interactive website built using Vue.js and Tailwind CSS. It takes user input and provides an interactive interface for performing various tasks.
 
 ![terminal](image/term.png)
