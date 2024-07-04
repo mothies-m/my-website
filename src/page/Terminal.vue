@@ -14,7 +14,7 @@ export default {
             <p v-show="showInput" class="whitespace-pre-line"></p>
         </div>
         <div class="flex flex-row">
-            <label class="w-40 text-red-200">User@portfolio:$ ~</label>
+            <label class="w-20 text-red-200">User:$ ~</label>
             <input 
             type="text"
             v-model="cmd"
