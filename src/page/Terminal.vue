@@ -20,6 +20,7 @@ export default {
             v-model="cmd"
             class="text-pink-200"
             tabIndex="0"
+            autofocus
             @keydown.enter="handleKeyDown"
             /> 
         </div>
