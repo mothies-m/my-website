@@ -19,6 +19,7 @@ export default {
             type="text"
             v-model="cmd"
             class="text-pink-200"
+            tabIndex="0"
             @keydown.enter="handleKeyDown"
             /> 
         </div>
